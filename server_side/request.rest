@@ -1,0 +1,41 @@
+GET http://localhost:8080/user/getAll
+
+###
+
+POST http://localhost:8080/user/create
+Content-Type: application/json
+
+{
+    "fullName": "name6",
+    "email": "email6@gmail.com",
+    "password": "Asdf@123"
+}
+
+###
+PUT http://localhost:8080/user/edit
+Content-Type: application/json
+
+{
+    "fullName": "Name5",
+    "email": "email5@gmail.com",
+    "password": "Asdf123@"
+}
+
+###
+
+DELETE http://localhost:8080/user/delete
+Content-Type: application/json
+
+{
+    "email": "email6@gmail.com"
+}
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+
+{
+    "email": "email5@gmail.com",
+    "password": "Asdf123@"
+}
